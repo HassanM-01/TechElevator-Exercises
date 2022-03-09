@@ -137,7 +137,11 @@ public class Lecture {
 		/*
 		26. Now set doneWithExercise to true.
 		*/
+<<<<<<< HEAD:java/module-1/02_Variables_and_Datatypes/lecture/src/main/java/com/techelevator/Lecture.java
 		doneWithExercises = true;
+=======
+
+>>>>>>> 1852a02edec6370b9a5f92781f05477fe8c78006:java/module-1/02_Variables_and_Datatypes/lecture-final/src/main/java/com/techelevator/Lecture.java
 	}
 
 }
