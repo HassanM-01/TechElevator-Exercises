@@ -44,7 +44,7 @@ public class Airplane {
 
     public boolean reserveSeats (boolean forFirstClass, int totalNumberOfSeats) {
         if(forFirstClass == true) {
-            if (totalNumberOfSeats <= this.getAvailableFirstClassSeats()) {
+            if (totalNumberOfSeats <= getAvailableFirstClassSeats()) {
                 bookedFirstClassSeats+=totalNumberOfSeats;
                 return true;
             }
@@ -53,7 +53,7 @@ public class Airplane {
 
         }
         else if (forFirstClass== false) {
-            if(totalNumberOfSeats <= this.getAvailableCoachSeats()) {
+            if(totalNumberOfSeats <= getAvailableCoachSeats()) {
                 bookedCoachSeats+=totalNumberOfSeats;
                 return true;
             }
