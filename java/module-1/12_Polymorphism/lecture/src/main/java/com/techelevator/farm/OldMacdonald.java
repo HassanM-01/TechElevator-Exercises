@@ -2,8 +2,17 @@ package com.techelevator.farm;
 
 public class OldMacdonald {
 	public static void main(String[] args) {
+		Cow cow = new Cow();
+		cow.sleep(true);
 
-		Singable[] singables = new Singable[] { new Cow(), new Chicken(), new Tractor() };
+		Pig pig = new Pig();
+		pig.sleep(true);
+
+		Cat cat = new Cat ("Chester", "whatever");
+		cat.sleep(true);
+		Singable[] singables =
+				new Singable[] { new Cow(), new Chicken(), new Tractor(),pig,cow,cat };
+
 
 		for (Singable singable : singables) {
 			String name = singable.getName();
