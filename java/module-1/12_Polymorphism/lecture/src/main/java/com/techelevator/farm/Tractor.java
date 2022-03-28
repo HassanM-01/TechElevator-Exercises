@@ -1,6 +1,8 @@
 package com.techelevator.farm;
 
-public class Tractor implements Singable{
+import com.techelevator.farm.interfaces.Singable;
+
+public class Tractor implements Singable {
     private String name;
     private String sound;
 
