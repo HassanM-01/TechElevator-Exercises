@@ -1,0 +1,4 @@
+Mercedes,Benz,2010,100000
+Honda,TypeR,2019,25000
+Infiniti,Q60,2018,30000
+Bentley,Bentayga,2021,5000
