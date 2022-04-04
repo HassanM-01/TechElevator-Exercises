@@ -1,0 +1,79 @@
+1-1 Command Line Shell and Git:
+
+https://techelevator.zoom.us/rec/share/eLXV1_mFg33ktN8GAj7Cr5shNTVIYN3Jfskibagzmmy6h62c7CP2U0YZy6XaCzKd.uHI4jbDApdUfr-Kj 
+Passcode: 3yWEH=PP
+
+1-2 Variables and Data Types:
+
+https://techelevator.zoom.us/rec/share/23kwY7FEYo8rz_WAoJhoHJ_UcTxfhXARHtND1NRs5jcykh2_1DR302I31pTf4us6.kXLN3V5I2XAwQh_T 
+Passcode: m3c#K47?
+
+1-3 Logical Branching
+
+https://techelevator.zoom.us/rec/share/t0xDjeIL5gxVrk0sY-pja0oXSD871SlZInk_peFn4vCOxPHismUBBEWHQNnCVOfK.S2ZJ6w7BRFrkB4_l 
+Passcode: 0?b@Fjea
+
+1-4 Loops and Arrays
+https://techelevator.zoom.us/rec/share/4kDdf6AtDdl5rC3m0mL_3hFB6fWs4umFQkQkS4EUZWjWz5X53GAC9CqddLBCuies.varm5gz_yvO65Ft1
+Passcode: U3Z#T6MY
+
+1-5 Command Line Programs
+https://techelevator.zoom.us/rec/share/5F5uvoL22tdaPIg-94NHoeNUiz44OhPUdsXcE_Bf7Uwo2hIR4uRE4vZWxLEeFUiE.FrpPUWJzgkeooqsa
+Passcode: p@e5&5*f
+
+1-6 Intro to Objects
+https://techelevator.zoom.us/rec/share/Vv2Ddo7_S8O8YS6TGW4_E7nC-XuRGhr4Uq_IFCRBPKQlsg8tjF6x9muiglGTvaE1.CxxYAOk5yuQOVbST
+Passcode: 5k2uWQI!
+
+https://techelevator.zoom.us/rec/share/qs9LxL5OO49WuzZeIXcd6_yCyO2HRUICkBTarHXSzaZToDqfdvXrph9AwUW8fUxR.Hh5kR9uQhUR-lMKI
+Passcode: z%473v?4
+
+1-7 Collections Part 1
+https://techelevator.zoom.us/rec/share/jgZB8aL5trxRH19-rNjwu_HBT3z7C-m_w1V6JJE9yRQYyDV981LTXtjxL79l7ruO.ZEeh6335Qm00ZSz8
+Passcode: #A4Jj1G9
+
+1-8 Collections Part 2
+https://techelevator.zoom.us/rec/share/XFYTiH5A0p37phvcxtbFzT_CKedSJP03-m-WadIfCoeD829h3q9w1PQbIaM7gKAx.QHeFuaQ70ZmvDD4N
+Passcode: kVcz%Mz9
+
+1-9 Encapsulation
+https://techelevator.zoom.us/rec/share/1rz1tV6KB2w4IPh3RNHOb6669ntzshGGCmZhmiGpkcvk9H5CfgDkWxwtqCy1QnuN.FWD8wc75VO0sNHFi
+Passcode: 5YcF!06v
+
+1-10 Review
+https://techelevator.zoom.us/rec/share/3NCtoqQU8ThcRFzc_ZywtFpBcmaYHW9eC-r1ob9NGwH8aMMlpv9RbgvbhrQWYMru.11fOiHsDwsvTZTIV
+Passcode: ?!8RjT8h
+
+1-11 Inheritance
+https://techelevator.zoom.us/rec/share/EepAXUZUmJOS40H7BdTAokWOmq5aseRrCF7ZGIllrMHa2_S_PPK2K8lEKbZScph7.ZtBr2OTlVOsBDS2y
+Passcode: 7?qzv?!0
+
+1-12 Polymorphism
+https://techelevator.zoom.us/rec/share/TOBnaPeC0h9mH2l3tPuS37SsN5mEiJ5yuOYD_vxsNhbP35kpTmLLHkdp5aPZQtMB.zd44_weZhaMJrxIz
+Passcode: QbwkzL4#
+
+1-13 Managing Inheritance
+https://techelevator.zoom.us/rec/share/WFYPGDiqj-kDRkh9f4iFMJiIEgDiEF4jBqWOVie8-polzdyQx1-bLk5FK2vn_u38.6hW8SlAghwgU3FE1
+Passcode: HHUg3.NJ
+
+1-14 Unit Testing
+https://techelevator.zoom.us/rec/share/bJhMr_lQ7JjmonDoO85NmHRSrSU5GvztazMFukdm_Ow70gmHUla9zWFvaPweezE.-4Y43OPd_gqaGHwD
+Passcode: G0F@1FUY
+
+1-15 Review
+https://techelevator.zoom.us/rec/share/QwenHe25M1FvOfIoO2Y2xKGMoOeBzUvkNvgH-XotwkV4FNIGTgMbu4moTPg2e028.dh-j2hnBoIA5dK_q
+Passcode: %f4=vVxh
+
+1-15/1-16a Exception handling and File Reading
+https://techelevator.zoom.us/rec/share/hxtLKbeLhF6e2XIoQkc3YgsgX8LOWfqWMp64pODF9tQtvDVVkePNXmlvg2odBrMo.RZSJnCr5VA-IQ_ZP
+Passcode: ^1gb097+
+
+1-16b File Writing
+https://techelevator.zoom.us/rec/share/83_MSjdBAC9SxjjxJH-734wCCNMJUxVeBYu4ooEq0dtToPaxCExh8Gl6wMMAOBje.Ja4cIq1Q5cFhbrEx
+Passcode: q#t#Uq^6
+
+1-17 Review
+https://techelevator.zoom.us/rec/share/WFYPGDiqj-kDRkh9f4iFMJiIEgDiEF4jBqWOVie8-polzdyQx1-bLk5FK2vn_u38.6hW8SlAghwgU3FE1
+Passcode: HHUg3.NJ
+
+
