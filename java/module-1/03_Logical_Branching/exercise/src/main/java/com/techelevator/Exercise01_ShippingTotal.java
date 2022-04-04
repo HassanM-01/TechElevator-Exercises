@@ -22,7 +22,11 @@ public class Exercise01_ShippingTotal {
     calculateShippingTotal(45) ➔ 23.75
      */
     public double calculateShippingTotal(int weightPounds) {
-        return 0;
+        if (weightPounds <= MAX_WEIGHT_POUNDS) {
+            return weightPounds * UP_TO_40_LB_RATE;
+        } else {
+            return ((weightPounds - MAX_WEIGHT_POUNDS) * OVER_40_LB_RATE) + 20;
+        }
     }
 
     /*
@@ -38,8 +42,19 @@ public class Exercise01_ShippingTotal {
     calculateShippingTotal(45, true) ➔ 21.375
      */
     public double calculateShippingTotal(int weightPounds, boolean hasDiscount) {
-        return 0;
+        if (hasDiscount == false && weightPounds <= MAX_WEIGHT_POUNDS) {
+            return weightPounds / 2.0;
+        } else if (hasDiscount == false && weightPounds > MAX_WEIGHT_POUNDS) {
+            return (((weightPounds - MAX_WEIGHT_POUNDS) * OVER_40_LB_RATE) + 20);
+        }
+        else if (hasDiscount == true && weightPounds <= MAX_WEIGHT_POUNDS) {
+            return (weightPounds * UP_TO_40_LB_RATE) * 0.9;
+        }
+        return (((weightPounds - MAX_WEIGHT_POUNDS) * OVER_40_LB_RATE) + 20) * 0.9;
     }
+
+
+
 
     /*
     As the business grows for Scamper Shipping Company, they now offer discounts in various amounts.
@@ -52,7 +67,16 @@ public class Exercise01_ShippingTotal {
     calculateShippingTotal(25, 0.15) ➔ 10.625
     calculateShippingTotal(45, 0.2) ➔ 19.0
      */
-    public double calculateShippingTotal(int weightPounds, double discountPercentage) {
-        return 0;
+        public double calculateShippingTotal(int weightPounds, double discountPercentage) {
+            if (weightPounds <= MAX_WEIGHT_POUNDS && discountPercentage == 0) {
+                return (weightPounds / 2.0);
+            }
+            else if (weightPounds <= MAX_WEIGHT_POUNDS && discountPercentage >= 0.05) {
+                return (weightPounds / 2.0) *  (1.0 - discountPercentage);
+            }
+            else if (weightPounds >= MAX_WEIGHT_POUNDS && discountPercentage == 0) {
+                return (((weightPounds - MAX_WEIGHT_POUNDS) * OVER_40_LB_RATE) + 20);
+            }
+            return (((weightPounds - MAX_WEIGHT_POUNDS) * OVER_40_LB_RATE) + 20) * (1.0 - discountPercentage);
     }
 }

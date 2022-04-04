@@ -1,4 +1,4 @@
-package com.techelevator.farm;
+package com.techelevator.farm.animals;
 
 public class Chicken extends FarmAnimal {
 
@@ -10,4 +10,7 @@ public class Chicken extends FarmAnimal {
 		System.out.println("Chicken laid an egg!");
 	}
 
+	public String eat(){
+		return "Eggs";
+	}
 }

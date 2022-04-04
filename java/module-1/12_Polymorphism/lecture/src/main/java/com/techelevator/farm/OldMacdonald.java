@@ -1,13 +1,28 @@
 package com.techelevator.farm;
 
+import com.techelevator.farm.animals.Cat;
+import com.techelevator.farm.animals.Chicken;
+import com.techelevator.farm.animals.Cow;
+import com.techelevator.farm.animals.Pig;
+import com.techelevator.farm.interfaces.Singable;
+
 public class OldMacdonald {
 	public static void main(String[] args) {
+		Cow cow = new Cow();
+		cow.sleep(true);
 
-		FarmAnimal[] farmAnimals = new FarmAnimal[] { new Cow(), new Chicken() };
+		Pig pig = new Pig();
+		pig.sleep(true);
 
-		for (FarmAnimal animal : farmAnimals) {
-			String name = animal.getName();
-			String sound = animal.getSound();
+		Cat cat = new Cat ("Chester", "whatever");
+		cat.sleep(true);
+		Singable[] singables =
+				new Singable[] { new Cow(), new Chicken(), new Tractor(),pig,cow,cat };
+
+
+		for (Singable singable : singables) {
+			String name = singable.getName();
+			String sound = singable.getSound();
 			System.out.println("Old MacDonald had a farm, ee, ay, ee, ay, oh!");
 			System.out.println("And on his farm he had a " + name + ", ee, ay, ee, ay, oh!");
 			System.out.println("With a " + sound + " " + sound + " here");

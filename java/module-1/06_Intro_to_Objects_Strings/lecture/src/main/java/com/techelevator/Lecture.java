@@ -1,8 +1,10 @@
 package com.techelevator;
 
 public class Lecture {
-
+	String lectureTopic;
+	int lectureDurationInMinutes;
 	public static void main(String[] args) {
+
 
 		System.out.println("************************************");
 		System.out.println("****** MAKING A STRING OBJECT ******");
