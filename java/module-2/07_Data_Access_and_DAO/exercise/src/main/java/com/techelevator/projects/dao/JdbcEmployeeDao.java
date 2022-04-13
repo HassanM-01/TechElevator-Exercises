@@ -54,7 +54,7 @@ public class JdbcEmployeeDao implements EmployeeDao {
 	public List<Employee> getEmployeesByProjectId(Long projectId) {
 
 		List<Employee> employees = new ArrayList<>();
-		String sqlGetEmployees = "SELECT * FROM employee JOIN  WHERE project_id = ?";
+		String sqlGetEmployees = "SELECT * FROM employee JOIN project_employee USING (employee_id) JOIN project USING (project_id)  WHERE project_id = ?";
 		SqlRowSet results = jdbcTemplate.queryForRowSet(sqlGetEmployees, projectId); //join w employee
 		while (results.next()) {
 			employees.add(mapRowToEmployee(results));
@@ -66,21 +66,32 @@ public class JdbcEmployeeDao implements EmployeeDao {
 
 	@Override
 	public void addEmployeeToProject(Long projectId, Long employeeId) {
-		String sql = "INSERT INTO project_employee (project_id, employee_id) VALUES (?, ?);";
+		String sql = "INSERT INTO project_employee (project_id, employee_id) VALUES (?, ?)";
 		jdbcTemplate.update(sql, projectId, employeeId);
 	}
 
 	@Override
 	public void removeEmployeeFromProject(Long projectId, Long employeeId) {
 
-		String sql = "DELETE FROM project_employee WHERE employee_id = ? AND project_id = ?;";
+		String sql = "DELETE FROM project_employee WHERE employee_id = ? AND project_id = ?";
 		jdbcTemplate.update(sql, employeeId, projectId);
 
 	}
 
 	@Override
 	public List<Employee> getEmployeesWithoutProjects() {
-		return new ArrayList<>();
+		List<Employee> employees = new ArrayList<>();
+
+		String sql = "SELECT *" +
+				"FROM employee LEFT JOIN project_employee ON employee.employee_id = project_employee.employee_id LEFT JOIN project ON project.project_id = project_employee.project_id WHERE project.project_id IS null";
+		SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
+
+		while (results.next()) {
+			employees.add(mapRowToEmployee(results));
+		}
+		return employees;
+
+
 	}
 
 
