@@ -1,24 +1,24 @@
 Bug 1
 -----
 Test that demonstrates problem:
-
+getTimesheetsByEmployeeId_returns_list_of_all_timesheets_for_employee
 Expected output:
-
+getTimesheet should return 2 employees
 Actual output:
-
+getTimesheet was only returning 1 employee
 How did you fix this bug?
-
+changed the if statement to a while loop in the DAO file
 
 Bug 2
 -----
 Test that demonstrates problem:
-
+getTimesheetsByProjectId_returns_list_of_all_timesheets_for_project
 Expected output:
-
+getTimesheet should return 3 employees
 Actual output:
-
+getTimesheet was only returning 2 employees
 How did you fix this bug?
-
+Fixed the WHERE statement in the sql string to point to project_id instead of employee_id
 
 Bug 3
 -----
@@ -34,10 +34,10 @@ How did you fix this bug?
 Bug 4
 -----
 Test that demonstrates problem:
-
+getBillableHours
 Expected output:
-
+expected .25 billable hours for second employee
 Actual output:
-
+returned 2.25 billable hours
 How did you fix this bug?
-
+added "billable = true" to the where statement
