@@ -23,13 +23,13 @@ Fixed the WHERE statement in the sql string to point to project_id instead of em
 Bug 3
 -----
 Test that demonstrates problem:
-
+createTimesheet
 Expected output:
-
+1
 Actual output:
-
+0
 How did you fix this bug?
-
+Changed where statement to look for timesheet_id
 
 Bug 4
 -----
