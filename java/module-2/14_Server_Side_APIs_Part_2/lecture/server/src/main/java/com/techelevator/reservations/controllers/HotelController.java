@@ -16,11 +16,11 @@ import java.util.List;
 public class HotelController {
 
     private HotelDao hotelDao;
-    private ReservationDao reservationDao;
 
-    public HotelController(HotelDao hotelDao, ReservationDao reservationDao) {
+
+    public HotelController(HotelDao hotelDao) {
         this.hotelDao = hotelDao;
-        this.reservationDao = reservationDao;
+
     }
 
     /**
@@ -49,10 +49,7 @@ public class HotelController {
      *
      * @return all reservations
      */
-    @RequestMapping(path = "/reservations", method = RequestMethod.GET)
-    public List<Reservation> listReservations() {
-        return reservationDao.findAll();
-    }
+
 
     /**
      * Get a reservation by its id
@@ -60,10 +57,6 @@ public class HotelController {
      * @param id
      * @return a single reservation
      */
-    @RequestMapping(path = "reservations/{id}", method = RequestMethod.GET)
-    public Reservation getReservation(@PathVariable int id) throws ReservationNotFoundException {
-        return reservationDao.get(id);
-    }
 
     /**
      * List of reservations by hotel
@@ -71,10 +64,7 @@ public class HotelController {
      * @param hotelID
      * @return all reservations for a given hotel
      */
-    @RequestMapping(path = "/hotels/{id}/reservations", method = RequestMethod.GET)
-    public List<Reservation> listReservationsByHotel(@PathVariable("id") int hotelID) throws HotelNotFoundException {
-        return reservationDao.findByHotel(hotelID);
-    }
+
 
     /**
      * Create a new reservation for a given hotel
@@ -82,12 +72,7 @@ public class HotelController {
      * @param reservation
      * @param hotelID
      */
-    @ResponseStatus(HttpStatus.CREATED)
-    @RequestMapping(path = "/hotels/{id}/reservations", method = RequestMethod.POST)
-    public Reservation addReservation(@RequestBody Reservation reservation, @PathVariable("id") int hotelID)
-            throws HotelNotFoundException {
-        return reservationDao.create(reservation, hotelID);
-    }
+
 
     /**
      * /hotels/filter?state=oh&city=cleveland
@@ -120,5 +105,24 @@ public class HotelController {
 
         return filteredHotels;
     }
+
+
+    /**
+     * @param reservation ID
+     * @body reservation
+     *
+     */
+
+
+    /**
+     *
+     * @param id
+     * @throws ReservationNotFoundException
+     */
+
+
+
+
+
 
 }
