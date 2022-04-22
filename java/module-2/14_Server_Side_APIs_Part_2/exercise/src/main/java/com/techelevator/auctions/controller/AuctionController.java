@@ -47,7 +47,7 @@ public class AuctionController {
         return dao.create(auction);
     }
 
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseStatus(HttpStatus.OK)
     @RequestMapping(path = "/{id}", method = RequestMethod.PUT)
     public Auction update (@PathVariable int id, @RequestBody Auction auction) throws AuctionNotFoundException {
         return dao.update(auction, id);
