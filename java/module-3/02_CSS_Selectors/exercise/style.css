@@ -98,3 +98,9 @@ main > section > div > h2 > i{
 div > h2 {
   color: #8CC36F;
 }
+
+hr{
+  width: 50%;
+  color: black;
+
+}
