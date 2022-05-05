@@ -20,3 +20,14 @@ body {
 .box:nth-child(even) {
   background-color: #005270;
 }
+
+div.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.box{
+  justify-content: stretch;
+  display: flex;
+  flex-grow: 1;
+}
