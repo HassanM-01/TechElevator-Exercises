@@ -28,6 +28,11 @@ function printToConsole(value) {
  * @param {number} secondParameter the second parameter to multiply
  */
 
+function multiplyTogether(firstParameter, secondParameter){
+    return firstParameter * secondParameter;
+}
+
+
 /**
  * This version makes sure that no parameters are ever missing. If
  * someone calls this function without parameters, we default the
@@ -38,7 +43,9 @@ function printToConsole(value) {
  * @param {number} [firstParameter=0] the first parameter to multiply
  * @param {number} [secondParameter=0] the second parameter to multiply
  */
-
+function multiplyNoUndefined(firstParameter = 0, secondParameter = 0){
+  return firstParameter * secondParameter;
+}
 
  
 /**
@@ -92,6 +99,27 @@ function createSentenceFromUser(name, age, listOfQuirks = [], separator = ', ') 
   return description + listOfQuirks.join(separator);
 }
 
+function logTimesTwo(n){
+  console.log(n*2);
+}
+
+function imperativeForEach(){
+  const myArray = [2,4,6,5,42,96,9,11];
+  for (let num of myArray){
+    logTimesTwo(num);
+  }
+}
+
+function declarativeForEach(){
+  const myArray = [2,4,6,5,42,96,9,11];
+  myArray.forEach(logTimesTwo);
+  myArray.forEach(function(n) {console.log(n*2);});
+  myArray.forEach((n) => {console.log(n*2);});
+}
+
+
+
+
 /**
  * Takes an array and, using the power of anonymous functions, generates
  * their sum.
@@ -100,7 +128,17 @@ function createSentenceFromUser(name, age, listOfQuirks = [], separator = ', ') 
  * @returns {number} sum of all the numbers
  */
 function sumAllNumbers(numbersToSum) {
-  return numbersToSum.reduce();
+  return numbersToSum.reduce((reducer, n) => reducer + n);
+}
+
+function reduceUsingObjects(){
+  const customers = [
+    {name: 'Freddy', amountSpent: 1000},
+    {name: 'Teddy', amountSpent: 2500},
+    {name: 'Beddy', amountSpent: 3100}
+  ];
+
+  return customers.reduce((total, customer) => total + customer.amountSpent, 0)
 }
 
 /**
@@ -111,4 +149,23 @@ function sumAllNumbers(numbersToSum) {
  * @returns {number[]} a new array with only those numbers that are
  *   multiples of 3
  */
-function allDivisibleByThree(numbersToFilter) {}
+function allDivisibleByThree(numbersToFilter) {
+  return numbersToFilter.filter(x => x % 3 === 0)
+}
+
+
+function mapDemo(){
+  const myArray = [ 'orange', 'green', 'blue', 'yellow'];
+  return myArray.map(x => x.substring(2))
+}
+
+function mapWithObjects(){
+  const customers = [
+    {name: 'Freddy', amountSpent: 1000},
+    {name: 'Teddy', amountSpent: 2500},
+    {name: 'Beddy', amountSpent: 3100}
+  ];
+
+  return customers.map(x => x.amountSpent+=100)
+
+}
