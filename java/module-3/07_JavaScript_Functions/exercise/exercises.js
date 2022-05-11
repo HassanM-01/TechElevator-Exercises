@@ -126,7 +126,9 @@ function getFullAddressesOfProperties(arrayOfObjects){
 
 function findLargest(array){
         let largest = array[0];
-         array.forEach( (x) => { if (x > largest){largest = x}}) 
+         array.forEach( (x) =>
+          { if (x > largest)
+            {largest = x}}) 
                  return largest;  
 }
 
